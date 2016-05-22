@@ -301,6 +301,8 @@ VOID SvcInit( DWORD dwArgc, LPTSTR *lpszArgv)
     ReportSvcStatus( SERVICE_RUNNING, NO_ERROR, 0 );
 
     // TO_DO: Perform work until service stops.
+	
+	
 
     while(1)
     {
@@ -308,8 +310,10 @@ VOID SvcInit( DWORD dwArgc, LPTSTR *lpszArgv)
 
         myshut();
 		Sleep(2000);
-        return;
+        
     }
+	
+	return;
 }
 
 //
